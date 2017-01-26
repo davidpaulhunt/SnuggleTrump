@@ -36,7 +36,7 @@ const kittyName = randomKittyName();
 const kittyImageUrl = randomKittyImageUrl();
 
 document.body.innerHTML = document.body.innerHTML
-.replace(/href=".*?"|<img.*?src=".*?".*?>|Donald John Trump|Donald J. Trump|Donald Trump|The Donald|DonaldJTrump|DonaldTrump|Donald|Mr. Trump|Trump Tower|Trump|border wall|wall|tower|refugees|Mexico|Mexicans|Mexican|voter fraud/ig,
+.replace(/href=".*?"|<img.*?src=".*?".*?>|Donald John Trump|Donald J. Trump|Donald Trump|The Donald|DonaldJTrump|DonaldTrump|Donald|Mr. Trump|Trump Tower|Trump|border wall|wall|tower|refugees|Mexico|Mexicans|Mexican|voter fraud|republicans|republican/ig,
 (match) => {
   if (match.startsWith('href')) return match;
 
@@ -55,6 +55,10 @@ document.body.innerHTML = document.body.innerHTML
   if (/voter/i.test(match)) return 'catnip disappearance';
 
   if (/refugees/i.test(match)) return 'puppies';
+
+  if (/republicans/i.test(match)) return 'kitties';
+
+  if (/republican/i.test(match)) return 'feline';
 
   return kittyName;
 });
