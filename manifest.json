@@ -4,7 +4,7 @@
   "name": "Snuggly Trump",
   "description": "Let's make President Trump a snuggly kitten.",
   "author": "David Hunt <davidpaulhunt@gmail.com>",
-  "version": "0.0.2",
+  "version": "0.1.0",
 
   "icons": {
     "16": "icon16.png",
